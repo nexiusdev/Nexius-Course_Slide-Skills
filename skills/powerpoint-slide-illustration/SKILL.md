@@ -34,25 +34,28 @@ keep instructional labels at least 18-24 pt, with 24+ pt preferred.
 ## Required Workflow
 
 1. Review every slide's teaching intent before building visuals.
-2. Create a visual plan with: slide number, concept, trainer explanation job,
+2. Determine the active brand profile. Default to `nexius-dark` when no profile
+   is provided. If the user supplies a brand guide, sample deck, palette, logo,
+   or style instruction, infer a temporary profile and apply it consistently.
+3. Create a visual plan with: slide number, concept, trainer explanation job,
    chosen visual type, icon/illustration need, and speaker-note purpose.
    Include a "no illustration needed" option where the clearest teaching object
    is a quote, discussion prompt, chart, table, canvas, or simple editable
    framework.
-3. Choose the visual strategy:
+4. Choose the visual strategy:
    - **Source** a licensed/free marketplace illustration when it already fits.
    - **Adapt** a raw/reference image by redrawing its structure into the deck
      style.
    - **Generate** a new bitmap illustration when the concept is bespoke.
    - **Draw** an editable PowerPoint diagram only when it can look polished.
-4. Check licensing before downloading or embedding external assets.
-5. Build illustrations large enough to teach from the back of a room, usually
+5. Check licensing before downloading or embedding external assets.
+6. Build illustrations large enough to teach from the back of a room, usually
    55-75% of the slide canvas.
-6. Embed illustrations as PNG for Canva compatibility unless editable vector
+7. Embed illustrations as PNG for Canva compatibility unless editable vector
    fidelity is explicitly more important, but do not flatten slide labels,
    headings, chart labels, or explanation text into the PNG.
-7. Add trainer notes explaining how to teach from the visual.
-8. Render previews and inspect the contact sheet plus key slides full-size.
+8. Add trainer notes explaining how to teach from the visual.
+9. Render previews and inspect the contact sheet plus key slides full-size.
 
 ## Visual Types
 
@@ -99,7 +102,8 @@ new original illustration.
 
 ## Generation
 
-For dark technology training decks, use prompts or scripts that target:
+Use prompts that match the active brand profile. For the default `nexius-dark`
+technology training profile, target:
 
 - dark navy gradient background,
 - teal glow lines and nodes,
@@ -109,7 +113,9 @@ For dark technology training decks, use prompts or scripts that target:
 - no logos, no provider names, no tiny text.
 
 Use `scripts/generate_dark_neon_illustrations.py` as a starting point for
-repeatable PNG assets when a bespoke professional diagram is needed.
+repeatable PNG assets when a bespoke professional diagram is needed. For other
+brand profiles, adapt its palette, background, linework, and accent colors
+before using it.
 
 ## PowerPoint Embedding
 

@@ -1,6 +1,6 @@
 ---
 name: course-slide
-description: Create or revise instructor-friendly PowerPoint course decks using a dark navy training template. Use when the user asks for course slides, training decks, workshop decks, lesson decks, PowerPoint outlines, or slide-generation prompts that should match the bundled dark navy/teal instructional style and sample PPT files.
+description: Create or revise instructor-friendly PowerPoint course decks using a configurable brand profile. Defaults to the bundled nexius-dark training style, but can use another brand profile, sample deck, or user-supplied palette. Use when the user asks for course slides, training decks, workshop decks, lesson decks, PowerPoint outlines, or slide-generation prompts.
 ---
 
 # Course Slide
@@ -9,8 +9,10 @@ description: Create or revise instructor-friendly PowerPoint course decks using 
 
 Use this skill to create training decks that are projection-readable,
 model-agnostic, and visually consistent with the bundled sample PowerPoints.
-Default to a serious dark navy instructional style with teal accents, concise
-text, editable shapes, and clear teaching hierarchy.
+Default to the `nexius-dark` brand profile: a serious dark navy instructional
+style with teal accents, concise text, editable shapes, and clear teaching
+hierarchy. If the user provides or requests another brand profile, use that
+profile instead of the default palette and layout style.
 
 This skill is the main course-slide preparation entry point. For substantial
 course decks, use the preparation pipeline below before building the final
@@ -43,6 +45,8 @@ Before creating or revising a deck, read:
 
 - `references/style-guide.md` for the visual system and layout rules.
 - `references/slide-patterns.md` for reusable slide archetypes.
+- `references/brand-profiles/nexius-dark.md` as the default brand profile.
+- Any user-selected brand profile under `references/brand-profiles/`.
 
 Use these assets when a PowerPoint template or visual reference is useful:
 
@@ -72,10 +76,20 @@ Use these assets when a PowerPoint template or visual reference is useful:
      workflow.
 1. Inspect the user brief and identify audience, duration, learning outcomes,
    and desired deliverable: outline, slide-by-slide script, or `.pptx`.
-2. Read the required references above.
+2. Read the required references above. Determine the active brand profile:
+   - If the user names a brand profile, read and apply that profile.
+   - If the user provides a brand guide, sample deck, logo, palette, or style
+     instruction, infer a temporary brand profile from it and state the key
+     choices before building.
+   - Otherwise use `nexius-dark`.
+   The active profile controls colors, typography, layout rhythm, visual style,
+   icon treatment, and generated-image prompts. Large-room readability remains
+   mandatory unless explicitly changed.
 3. If creating an actual `.pptx`, inspect the bundled sample decks first and
-   reuse their proportions, spacing, dark theme, footer behavior, and card/callout
-   language. Keep slides 16:9 widescreen.
+   reuse their proportions, spacing, footer behavior, and card/callout language
+   only when `nexius-dark` or a compatible dark training profile is active. For
+   other profiles, inspect the user's brand references or selected profile
+   instead. Keep slides 16:9 widescreen.
 4. Turn content into a teaching sequence: setup, concept, worked example,
    activity, debrief, and takeaway. Avoid marketing-deck structure unless the
    user explicitly requests it.
@@ -89,7 +103,7 @@ Use these assets when a PowerPoint template or visual reference is useful:
    Do not force an image onto every slide. Use illustration only when it improves
    learner understanding, memory, or explanation speed.
 6. When multiple illustration routes are plausible, compare them before
-   embedding: generated dark-course visuals, editable/native diagrams, and
+   embedding: generated brand-profile visuals, editable/native diagrams, and
    third-party vector/marketplace candidates. Select one visual route per slide
    based on teaching value, style fit, editability, and license safety. Do not
    embed third-party preview art or "free vector" assets unless the license is
@@ -119,8 +133,8 @@ Use these assets when a PowerPoint template or visual reference is useful:
 9. For concept-heavy slides, create or source a strong explanatory illustration
    when it materially helps the instructor explain the point. In this course,
    "illustration" means a professionally designed explanatory diagram or image:
-   polished dark-navy/teal infographic composition, glow/lighting or depth when
-   useful, coherent iconography, and a clear conceptual structure. Do not treat
+   a polished composition matching the active brand profile, glow/lighting or
+   depth when useful, coherent iconography, and a clear conceptual structure. Do not treat
    a plain box-and-line schematic or letter badge as a finished illustration.
    Treat the visual as a teaching object, not a decoration: it should be large
    enough to explain the concept from the back of a room. Use generated bitmap
@@ -137,8 +151,8 @@ Use these assets when a PowerPoint template or visual reference is useful:
 11. If the project includes raw reference images, inspect them for reusable
    structures such as loops, maturity ladders, operating-model stacks,
    governance paths, workflow maps, or before/after diagrams. Recreate the
-   useful structure in the course style instead of pasting the raw image
-   unchanged. Convert the reference into a dark navy/teal blended diagram,
+   useful structure in the active brand profile instead of pasting the raw image
+   unchanged. Convert the reference into a profile-matched blended diagram,
    generated illustration, or editable PowerPoint visual with clear labels. If
    the raw reference contains a useful framework, redraw it as an explanatory
    diagram with short text labels, not just a symbolic illustration.
@@ -151,12 +165,17 @@ Use these assets when a PowerPoint template or visual reference is useful:
 
 ## Deck Rules
 
-- Use dark navy `#0B1A2A` as the default background.
-- Use bright teal `#05D6A4` for section labels, dividers, borders, and emphasis.
-- Use soft white `#F8FAFC` for headings and primary text.
-- Use muted blue-gray for body/supporting text.
-- Use amber for caution, red for risk, and blue/green/purple for secondary
-  categories.
+- Apply the active brand profile. If no profile is supplied, use
+  `nexius-dark`:
+  - dark navy `#0B1A2A` as the default background,
+  - bright teal `#05D6A4` for section labels, dividers, borders, and emphasis,
+  - soft white `#F8FAFC` for headings and primary text,
+  - muted blue-gray for body/supporting text,
+  - amber for caution, red for risk, and blue/green/purple for secondary
+    categories.
+- When another brand profile is active, replace the default palette,
+  typography, layout rhythm, and generated-image style with that profile while
+  preserving instructional clarity and readability.
 - Use the large-room typography contract by default for course decks: H1,
   title, and main header text should be 48-60 pt. Section titles and major
   teaching statements should usually sit in the 44-56 pt range.
@@ -172,7 +191,8 @@ Use these assets when a PowerPoint template or visual reference is useful:
   smaller cards need shorter copy, slightly smaller but still readable body
   text, and more internal breathing room. Text should look seated inside the
   box, not merely non-overflowing.
-- Use uppercase teal kicker labels at top-left, typically 13-16 pt.
+- Use the profile's kicker/section label style. For `nexius-dark`, use
+  uppercase teal kicker labels at top-left, typically 13-16 pt.
 - Use tiny muted footer text bottom-left and two-digit slide number bottom-right.
 - Build simple visuals from editable PowerPoint shapes: cards, circles, rows,
   bars, simple flows, and comparison columns.
@@ -194,9 +214,10 @@ Use these assets when a PowerPoint template or visual reference is useful:
 - Prefer diagram-plus-text slides for concepts with relationships, sequence, or
   governance logic. Use the visual to show the structure and 1-3 large text cues
   to explain why it matters.
-- Do not let icon/card grids become the whole visual language. Match the sample
-  decks' rhythm: big left-aligned teaching headline, one clear visual anchor,
-  short support points, and a bottom callout when useful.
+- Do not let icon/card grids become the whole visual language. Match the active
+  profile's rhythm. For `nexius-dark`, use the sample decks' rhythm: big
+  left-aligned teaching headline, one clear visual anchor, short support
+  points, and a bottom callout when useful.
 - Keep image and words as separate elements. Bitmap/raster images may provide
   the scene, metaphor, or background, but editable PowerPoint text should carry
   the teaching labels. Do not export a full slide section as one flattened image
@@ -221,10 +242,11 @@ text-heavy. Good generated illustration targets include:
 - layered frameworks and maturity journeys,
 - workshop canvases and capstone artifacts.
 
-Generated images should match the dark navy/teal training style: deep navy
-background, bright teal flow lines or highlights, muted blue panels, amber for
-caution/escalation, red only for risk/rejection, and green for approval or
-success. Avoid trapping important text inside generated images. Prefer diagrams
+Generated images should match the active brand profile. For `nexius-dark`, use
+deep navy background, bright teal flow lines or highlights, muted blue panels,
+amber for caution/escalation, red only for risk/rejection, and green for
+approval or success. For other profiles, use that profile's palette,
+composition, mood, and "avoid" rules. Avoid trapping important text inside generated images. Prefer diagrams
 with no embedded words plus editable PowerPoint labels. If the slide needs text
 inside the diagram, make the text large, sparse, and verify it visually in the
 rendered preview.
@@ -247,8 +269,8 @@ decorations:
    before/after contrast, maturity level, feedback loop, or governance path.
 3. Decide whether to recreate it as editable PowerPoint shapes, a generated
    illustration, or a hybrid: generated background/scene plus editable labels.
-4. Restyle it into the course visual system: dark navy background, teal
-   emphasis, simple geometry, projection-safe labels, and bottom takeaway.
+4. Restyle it into the active brand profile with simple geometry,
+   projection-safe labels, and a clear takeaway.
 5. Keep the raw-source file names or source notes in a short provenance note.
 6. Verify the rendered slide preview for clipping, especially labels near the
    footer callout, title area, or slide edges.

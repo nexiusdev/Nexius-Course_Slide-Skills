@@ -43,3 +43,26 @@ Then start a new Codex thread.
 - `course-artifact-template-planner`
 - `powerpoint-slide-illustration`
 
+## Brand Profiles
+
+The default deck style is `nexius-dark`.
+
+Brand profiles live here:
+
+```text
+skills/course-slide/references/brand-profiles/
+```
+
+To create a new reusable brand profile:
+
+1. Copy `custom-brand-template.md`.
+2. Rename it, for example `client-acme-light.md`.
+3. Fill in colors, fonts, layout rhythm, visual language, and sample references.
+4. Start a new Codex thread and ask:
+
+```text
+Use $course-slide with the client-acme-light brand profile.
+```
+
+Users can also attach a brand guide or sample deck and ask Codex to infer a
+temporary brand profile for that course.

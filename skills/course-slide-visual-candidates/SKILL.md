@@ -20,6 +20,7 @@ Start from:
 - trainer explanation job,
 - visual treatment from `course-slide-visual-planner`,
 - course visual style requirements,
+- active brand profile, or enough brand references to infer one,
 - any raw reference images or source materials,
 - desired output folder when actual visual assets should be generated.
 
@@ -30,7 +31,8 @@ If the visual treatment has not been planned yet, use `course-slide-visual-plann
 For every visual-heavy slide, produce or identify exactly three routes unless the user explicitly narrows the task:
 
 1. Generated course-style illustration.
-   - Use AI image generation for a polished dark navy / teal explanatory visual.
+   - Use AI image generation for a polished explanatory visual matching the
+     active brand profile. Default to `nexius-dark` when no profile is supplied.
    - Prompt for no text, no logos, 16:9 composition, and enough empty space for editable PowerPoint labels.
    - Use when the slide needs a memory anchor, abstract operating model, human-in-loop scene, governance path, or concept illustration.
 
@@ -51,11 +53,13 @@ If a slide does not deserve a rich visual, state that this skill should not gene
 
 For generated bitmap candidates:
 
-- create visuals in the dark navy / teal course style,
+- create visuals in the active brand profile,
 - avoid embedded words,
 - avoid logos,
 - avoid stock-photo composition,
-- use teal for main flows, muted blue panels, amber caution, red risk, and green approval,
+- for `nexius-dark`, use teal for main flows, muted blue panels, amber caution,
+  red risk, and green approval,
+- for other profiles, use that profile's color, mood, layout, and avoid rules,
 - leave space for slide title and editable labels,
 - save candidate files in a clear folder such as `visual-candidates/slide-###/`.
 

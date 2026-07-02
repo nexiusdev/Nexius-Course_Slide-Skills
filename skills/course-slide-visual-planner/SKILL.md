@@ -21,6 +21,15 @@ Start from one of:
 - a workshop agenda,
 - an existing deck requiring visual redesign.
 
+Also determine the active brand profile:
+
+- Use a named profile from `course-slide/references/brand-profiles/` when the
+  user specifies one.
+- Use `nexius-dark` when no profile is specified.
+- If the user provides a brand guide, sample deck, colors, fonts, or logo,
+  infer a temporary profile and state the inferred palette, typography, layout
+  rhythm, and visual style.
+
 If the slide count is not settled, use a slide-count planning skill first. If the user asks for a `.pptx`, finish this visual plan first, then pass it into the deck-building workflow.
 
 ## Core Output
@@ -75,7 +84,7 @@ For image-led concept slides, plan the illustration as roughly 60-70% of the sli
 
 When an illustration-heavy slide has multiple plausible routes, compare at least these options before choosing:
 
-1. Generated dark-course visual.
+1. Generated brand-profile visual.
 2. Editable/native PowerPoint diagram or adapted in-project reference.
 3. Licensed third-party/vector/marketplace candidate, only when license and attribution are safe.
 
@@ -91,7 +100,8 @@ Choose the route that best explains the slide, not the prettiest route. If a thi
 
 ## Course Visual Style Contract
 
-Plan visuals for a serious dark navy instructional training style:
+Plan visuals using the active brand profile. The default profile is
+`nexius-dark`, a serious dark navy instructional training style:
 
 - dark navy background,
 - bright teal for emphasis, dividers, borders, and flow lines,
@@ -105,6 +115,10 @@ Plan visuals for a serious dark navy instructional training style:
 - no decorative imagery that does not explain the lesson,
 - no glossy corporate styling.
 
+When another profile is active, replace the default palette, icon style,
+illustration style, layout rhythm, and generated-image prompt language with the
+selected profile. Keep the large-room readability and editable-label rules.
+
 All teaching words must remain editable PowerPoint text whenever possible. Generated images should contain no important text, no logos, and no small unreadable labels. Put titles, labels, callouts, captions, process names, chart labels, and explanation text outside the image as editable slide elements.
 
 ## Raw Reference Conversion
@@ -114,7 +128,7 @@ When raw source images, screenshots, or reference diagrams exist:
 1. Inspect the raw image directly.
 2. Extract the teachable structure: flow, layers, roles, checkpoints, before/after contrast, maturity level, feedback loop, model router, workflow map, or governance path.
 3. Decide whether to recreate it as editable PowerPoint shapes, a generated illustration, or a hybrid.
-4. Restyle it into the course visual system.
+4. Restyle it into the active brand profile.
 5. Keep source notes or raw filenames for provenance.
 6. Plan a QA check for labels near the footer, title block, slide edges, and bottom callouts.
 

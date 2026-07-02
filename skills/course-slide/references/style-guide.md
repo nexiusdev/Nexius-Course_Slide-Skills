@@ -2,6 +2,27 @@
 
 Use this visual system for dark navy instructional training decks.
 
+## Brand Profiles
+
+This skill supports brand profiles. Unless the user supplies another profile,
+use `references/brand-profiles/nexius-dark.md` as the default.
+
+When the user asks for a different brand, client style, color palette, sample
+deck, or visual identity:
+
+1. Read the requested brand profile if it exists under `references/brand-profiles/`.
+2. If no profile exists, infer a temporary profile from the user's brand guide,
+   sample deck, colors, fonts, or attached references.
+3. Apply that profile consistently across palette, typography, layout rhythm,
+   visual style, iconography, and generated-image prompts.
+4. Keep large-room readability rules from this style guide unless the user
+   explicitly changes them.
+5. Do not force `nexius-dark` colors when another brand profile is selected.
+
+To add a reusable brand, copy
+`references/brand-profiles/custom-brand-template.md`, rename it to the new
+profile id, and fill in the sections.
+
 ## Core Style
 
 - Canvas: 16:9 widescreen PowerPoint.

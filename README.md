@@ -37,6 +37,36 @@ See [INSTALL.md](INSTALL.md) for install notes.
 | [`course-artifact-template-planner`](skills/course-artifact-template-planner/SKILL.md) | Plan handouts, worksheets, templates, rubrics, checklists, canvases, and final course artifacts. |
 | [`powerpoint-slide-illustration`](skills/powerpoint-slide-illustration/SKILL.md) | Plan, source, generate, and QA professional explanatory illustrations for PowerPoint training decks. |
 
+## Brand Profiles
+
+The plugin defaults to the `nexius-dark` brand profile, but users can supply or
+create their own brand profile without rewriting the skills.
+
+Default profile:
+
+```text
+skills/course-slide/references/brand-profiles/nexius-dark.md
+```
+
+Template for new profiles:
+
+```text
+skills/course-slide/references/brand-profiles/custom-brand-template.md
+```
+
+Example prompt:
+
+```text
+Use $course-slide with the nexius-dark brand profile.
+```
+
+Or:
+
+```text
+Use $course-slide with this attached client brand guide. Infer a temporary
+brand profile and apply it consistently.
+```
+
 ## Repository Structure
 
 ```text
@@ -57,6 +87,7 @@ See [INSTALL.md](INSTALL.md) for install notes.
     │   ├── agents/
     │   ├── assets/
     │   └── references/
+    │       └── brand-profiles/
     ├── course-slide-planner/
     │   ├── SKILL.md
     │   └── agents/
@@ -102,3 +133,7 @@ After installation, start a new Codex thread so the plugin skills are loaded.
 The `course-slide` and `powerpoint-slide-illustration` skills include reference
 files and sample assets used by the skill instructions. Keep those folders
 together when copying the skills elsewhere.
+
+To add a reusable client style, copy `custom-brand-template.md`, rename it to a
+stable profile id, fill in the palette/layout/visual rules, and ask Codex to use
+that profile by name.
