@@ -1,4 +1,4 @@
-# Nexius AI Skills
+# Nexius Course Slide Skills
 
 Reusable AI-agent skills for Nexius course design, training delivery,
 management approval, and agentic transformation work.
@@ -61,4 +61,3 @@ Each skill should include:
 These skills are designed to preserve useful working patterns from real course
 design and AI transformation projects. They should stay practical, specific,
 and easy for another agent or trainer to execute.
-
