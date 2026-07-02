@@ -14,12 +14,31 @@ files, such as Codex, Claude Code, or other agentic workspaces.
 
 ## Available Skills
 
+### Installed Personal Codex Skills
+
+These mirror the course-related skills installed under
+`C:\Users\melve\.codex\skills`.
+
+| Skill | Purpose |
+|---|---|
+| [`course-slide`](skills/course-slide/SKILL.md) | Main entry point for creating or revising instructor-friendly dark navy PowerPoint course decks. |
+| [`course-slide-planner`](skills/course-slide-planner/SKILL.md) | Plan slide counts and slide-by-slide inventory before deck creation. |
+| [`course-slide-visual-planner`](skills/course-slide-visual-planner/SKILL.md) | Plan the visual treatment for each slide before PowerPoint creation. |
+| [`course-slide-visual-candidates`](skills/course-slide-visual-candidates/SKILL.md) | Generate, compare, score, and select three visual candidates for visual-heavy slides. |
+| [`course-learning-experience-designer`](skills/course-learning-experience-designer/SKILL.md) | Design learner journey, outcomes, pacing, activities, assessments, facilitation flow, and cognitive-load plan. |
+| [`course-artifact-template-planner`](skills/course-artifact-template-planner/SKILL.md) | Plan handouts, worksheets, templates, rubrics, checklists, canvases, and final course artifacts. |
+| [`powerpoint-slide-illustration`](skills/powerpoint-slide-illustration/SKILL.md) | Decide when and how to use diagrams, icons, screenshots, graphics, and generated visuals in course slides. |
+
+### Project-Derived Skills
+
+These were created from the course approval and slide-planning work in this
+repository.
+
 | Skill | Purpose |
 |---|---|
 | [`course-program-design`](skills/course-program-design/SKILL.md) | Design a complete course program from business goals, source material, transformation outcomes, activities, and deliverables. |
 | [`course-slide-plan`](skills/course-slide-plan/SKILL.md) | Create build-ready slide-by-slide course deck plans with purpose, visible content, visual treatment, illustration needs, and note direction. |
 | [`course-powerpoint-deck-build`](skills/course-powerpoint-deck-build/SKILL.md) | Build editable PowerPoint training decks from slide plans with projection-safe text, visuals, notes, and QA artifacts. |
-| [`powerpoint-slide-illustration`](skills/powerpoint-slide-illustration/SKILL.md) | Decide when and how to use diagrams, icons, screenshots, graphics, and generated visuals in course slides. |
 | [`course-trainer-notes`](skills/course-trainer-notes/SKILL.md) | Expand slide-note directions into trainer-ready speaker notes with script, examples, questions, activities, timing, and transitions. |
 | [`course-slide-qa-review`](skills/course-slide-qa-review/SKILL.md) | Review course slide plans or decks for trainer enablement, readability, visuals, notes, and approval readiness. |
 | [`course-approval-doc`](skills/course-approval-doc/SKILL.md) | Create management-ready course approval documents, sponsor decision briefs, and training approval papers. |
@@ -33,18 +52,37 @@ files, such as Codex, Claude Code, or other agentic workspaces.
 └── skills/
     ├── course-approval-doc/
     │   └── SKILL.md
+    ├── course-artifact-template-planner/
+    │   └── SKILL.md
+    ├── course-learning-experience-designer/
+    │   └── SKILL.md
     ├── course-powerpoint-deck-build/
     │   └── SKILL.md
     ├── course-program-design/
     │   └── SKILL.md
+    ├── course-slide/
+    │   ├── SKILL.md
+    │   ├── agents/
+    │   ├── assets/
+    │   └── references/
     ├── course-slide-plan/
     │   └── SKILL.md
+    ├── course-slide-planner/
+    │   └── SKILL.md
     ├── course-slide-qa-review/
+    │   └── SKILL.md
+    ├── course-slide-visual-candidates/
+    │   └── SKILL.md
+    ├── course-slide-visual-planner/
     │   └── SKILL.md
     ├── course-trainer-notes/
     │   └── SKILL.md
     └── powerpoint-slide-illustration/
-        └── SKILL.md
+        ├── SKILL.md
+        ├── agents/
+        ├── illustration-output/
+        ├── references/
+        └── scripts/
 ```
 
 ## How to Use

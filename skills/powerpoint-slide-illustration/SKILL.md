@@ -1,78 +1,147 @@
 ---
 name: powerpoint-slide-illustration
-description: Decide when and how to use illustrations, diagrams, icons, screenshots, and graphics in course PowerPoint slides. Use when improving slide visuals or creating visual aids for training decks.
-version: 1.0.0
+description: Create professional explanatory illustrations for PowerPoint decks. Use when Codex needs to plan, source, generate, adapt, or embed polished slide visuals such as infographic diagrams, dark-neon technology illustrations, hub-and-spoke visuals, process diagrams, role models, governance paths, concept maps, and training-slide imagery; especially when simple icons, card grids, or plain box-and-line diagrams are not enough.
 ---
 
-# PowerPoint Slide Illustration Skill
+# PowerPoint Slide Illustration
 
-## Purpose
+## Overview
 
-Create or specify visuals that help a trainer teach. Course visuals should
-clarify the concept, reduce visible text, and make the slide easier to explain.
-They should not be filler decoration.
+Use this skill to turn slide content into professional teaching illustrations:
+polished image-led or diagram-led visuals that help a presenter explain a
+concept. Prefer this skill when the user asks for "illustrations" in slides,
+when a deck looks too text/card-heavy, or when a concept needs a visual object
+the trainer can point to.
 
-## Use When
+## Core Rule
 
-Use this skill when asked to:
+An illustration is not a small icon, a letter badge, or a plain schematic.
+For this skill, an illustration means one of:
 
-- add illustrations to course slides,
-- create visual aids,
-- improve slide visuals,
-- decide whether a slide needs an image,
-- generate diagrams for a training deck,
-- make slides less text-heavy.
+- a professional bitmap infographic or conceptual image,
+- a polished PowerPoint-ready diagram with depth, lighting, and coherent
+  iconography,
+- an adapted licensed marketplace illustration,
+- a generated visual asset that explains the slide's concept.
 
-## Visual Decision Rules
+Keep slide titles, labels, and callouts editable. Use bitmap illustrations as
+visual anchors, not as a place to hide tiny unreadable text. If a generated or
+sourced illustration contains words, recreate those words as editable PowerPoint
+elements and use a clean/no-text version of the image whenever possible. For
+big-audience course decks, keep H1/title/header text in the 48-60 pt range and
+keep instructional labels at least 18-24 pt, with 24+ pt preferred.
 
-Use:
+## Required Workflow
 
-- diagrams for process, routing, architecture, governance, and workflows,
-- matrices for comparisons, risk controls, and evaluation criteria,
-- ladders for maturity, autonomy, and progression,
-- dashboards for metrics and management evidence,
-- card grids for grouped outcomes or deliverables,
-- screenshots when teaching a real tool interface,
-- generated imagery only when it makes an abstract concept easier to grasp.
+1. Review every slide's teaching intent before building visuals.
+2. Create a visual plan with: slide number, concept, trainer explanation job,
+   chosen visual type, icon/illustration need, and speaker-note purpose.
+   Include a "no illustration needed" option where the clearest teaching object
+   is a quote, discussion prompt, chart, table, canvas, or simple editable
+   framework.
+3. Choose the visual strategy:
+   - **Source** a licensed/free marketplace illustration when it already fits.
+   - **Adapt** a raw/reference image by redrawing its structure into the deck
+     style.
+   - **Generate** a new bitmap illustration when the concept is bespoke.
+   - **Draw** an editable PowerPoint diagram only when it can look polished.
+4. Check licensing before downloading or embedding external assets.
+5. Build illustrations large enough to teach from the back of a room, usually
+   55-75% of the slide canvas.
+6. Embed illustrations as PNG for Canva compatibility unless editable vector
+   fidelity is explicitly more important, but do not flatten slide labels,
+   headings, chart labels, or explanation text into the PNG.
+7. Add trainer notes explaining how to teach from the visual.
+8. Render previews and inspect the contact sheet plus key slides full-size.
 
-Do not add imagery when a clean diagram, icon grid, or matrix would teach the
-idea better.
+## Visual Types
 
-## Illustration Labels
+Use `references/illustration-patterns.md` when deciding which visual type fits a
+slide. Use `references/deck-review-principles.md` when a deck risks becoming
+visually repetitive or when the user asks for stronger presentation-template
+thinking. Common types include:
 
-For slide plans, use:
+- hub-and-spoke concept system,
+- circular loop or feedback cycle,
+- before/after transformation,
+- workflow bridge,
+- layered architecture stack,
+- decision gate,
+- permission or governance model,
+- evidence trail,
+- canvas or worksheet preview,
+- role/accountability split.
+- bar chart or simple data comparison,
+- table or decision matrix,
+- quote/rule slide,
+- discussion prompt with minimal visual support.
 
-- `Illustration recommended`: a visual anchor materially improves teaching.
-- `Illustration optional`: a diagram or simple layout may be enough.
-- `No illustration needed`: native shapes, icons, or text layout are sufficient.
+Do not use the same type repeatedly just because it is available. Visual variety
+is part of instructional design: different concepts deserve different visual
+forms.
 
-## Course Visual Requirements
+## Sourcing Rules
 
-- Visuals should support one concept per slide.
-- Visuals must leave room for large readable text.
-- Avoid dense infographics that require close reading.
-- Prefer editable PowerPoint shapes for review decks.
-- Use consistent icon style and color.
-- Keep contrast high for projection.
-- Avoid visuals that look like generic stock filler.
+Use external marketplaces only when the asset can be legally used.
 
-## Workflow
+- Slidesgo: useful for illustrated template styles and PowerPoint/Canva-ready
+  inspiration. Check whether the template is free or premium.
+- IconScout: useful for free/premium illustration packs in PNG/SVG/EPS/AI/JPG.
+  Confirm free/premium status and licensing before download.
+- Envato Elements: use as paid template reference unless the user has access and
+  asks to use licensed downloads.
+- SlideModel: useful for editable PowerPoint illustration/infographic patterns
+  and visual metaphor examples.
 
-1. Identify the teaching point of the slide.
-2. Choose the visual form that best explains that point.
-3. Remove or reduce text that the visual now carries.
-4. Add clear labels, not paragraphs.
-5. Check the visual at slide-preview size.
-6. Add trainer-note guidance explaining how to talk through the visual.
+Do not copy preview images from marketplaces as final assets. If access or
+license is unclear, use the site only as visual reference and generate or draw a
+new original illustration.
 
-## Verification
+## Generation
 
-Before finalizing:
+For dark technology training decks, use prompts or scripts that target:
 
-- the visual teaches the concept,
-- the slide is easier to understand because of it,
-- text remains readable,
-- labels do not overlap,
-- the visual style matches the deck,
-- the trainer notes explain how to use it.
+- dark navy gradient background,
+- teal glow lines and nodes,
+- blue/purple/amber/red/green category accents,
+- coherent pictograms,
+- circular hub systems, process loops, or layered frameworks,
+- no logos, no provider names, no tiny text.
 
+Use `scripts/generate_dark_neon_illustrations.py` as a starting point for
+repeatable PNG assets when a bespoke professional diagram is needed.
+
+## PowerPoint Embedding
+
+- Use PNG for Canva-safe imports.
+- Keep labels outside the image as editable PowerPoint text. This applies to
+  titles, section labels, pill labels, process names, chart labels, captions,
+  and explanatory callouts. Use large-room readable sizing: 48-60 pt for main
+  headers where appropriate, and generally 24+ pt for instructional labels.
+- Only place text inside the image when it is decorative, not instructional, or
+  when the user explicitly requests a flattened visual.
+- Do not let the illustration compete with the title or bottom callout.
+- Do not use small decorative images merely to satisfy an "image per slide"
+  requirement.
+
+## QA Checklist
+
+Before delivery:
+
+- Each concept slide has a clear visual explanation strategy.
+- The visual form changes with the teaching job; the deck is not a sequence of
+  near-identical illustration panels.
+- Slides that do not need an illustration are allowed to be clean text, chart,
+  discussion, or editable framework slides.
+- All teaching words are editable PowerPoint elements, not trapped in a bitmap.
+- The illustration is large enough to teach, not just decorate.
+- H1/title/header text is large enough for the room, normally 48-60 pt in
+  course decks.
+- No instructional labels, body text, chart labels, or diagram text fall below
+  the 18-24 pt minimum band; prefer 24+ pt wherever possible.
+- Crowding is solved by simplifying, splitting, or moving detail to notes, not
+  by shrinking teaching text below the minimum.
+- The visual style is consistent across slides.
+- External assets have acceptable license status or are replaced with original
+  generated/adapted visuals.
+- The PPTX renders correctly and key slides have been visually inspected.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Course Slide"
+  short_description: "Create dark navy instructional training decks"
+  default_prompt: "Use $course-slide to create a concise training PowerPoint deck from this course outline."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Course Learning Experience Designer"
+  short_description: "Design learner journey and course flow"
+  default_prompt: "Use $course-learning-experience-designer to design the learner journey, outcomes, activities, assessments, pacing, and facilitation flow for my course."

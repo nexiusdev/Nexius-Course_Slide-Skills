@@ -1,0 +1,4 @@
+interface:
+  display_name: "Course Slide Visual Candidates"
+  short_description: "Generate and score slide visual candidates"
+  default_prompt: "Use $course-slide-visual-candidates to generate three visual candidates for each selected course slide, score them, and choose the best teaching visual."

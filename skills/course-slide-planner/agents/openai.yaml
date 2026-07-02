@@ -1,0 +1,4 @@
+interface:
+  display_name: "Course Slide Planner"
+  short_description: "Plan slide counts from course requirements"
+  default_prompt: "Use $course-slide-planner to estimate slide counts and plan a course deck from my course requirements."

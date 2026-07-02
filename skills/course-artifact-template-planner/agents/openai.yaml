@@ -1,0 +1,4 @@
+interface:
+  display_name: "Course Artifact Template Planner"
+  short_description: "Plan course handouts and templates"
+  default_prompt: "Use $course-artifact-template-planner to identify and plan the learner handouts, worksheets, templates, rubrics, and final artifacts for my course."

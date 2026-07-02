@@ -1,0 +1,4 @@
+interface:
+  display_name: "PowerPoint Slide Illustration"
+  short_description: "Plan and build professional slide illustrations"
+  default_prompt: "Use $powerpoint-slide-illustration to plan and create professional explanatory illustrations for a PowerPoint training deck."

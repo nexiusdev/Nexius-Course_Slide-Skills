@@ -1,0 +1,4 @@
+interface:
+  display_name: "Course Slide Visual Planner"
+  short_description: "Plan visuals for each course slide"
+  default_prompt: "Use $course-slide-visual-planner to plan the visual treatment for each slide in my course deck."
