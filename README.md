@@ -1,6 +1,6 @@
 # Nexius Course Slide Skills
 
-Reusable course-related Codex skills for course design, slide planning, visual
+Reusable course-related Codex plugin for course design, slide planning, visual
 planning, artifact planning, and PowerPoint illustration.
 
 These folders mirror the installed personal Codex skills from:
@@ -8,6 +8,22 @@ These folders mirror the installed personal Codex skills from:
 ```text
 C:\Users\melve\.codex\skills
 ```
+
+## Plugin Package
+
+This repository is packaged as a Codex plugin:
+
+```text
+.codex-plugin/plugin.json
+```
+
+Plugin name:
+
+```text
+nexius-course-slide-skills
+```
+
+See [INSTALL.md](INSTALL.md) for install notes.
 
 ## Available Skills
 
@@ -25,6 +41,8 @@ C:\Users\melve\.codex\skills
 
 ```text
 .
+├── .codex-plugin/
+│   └── plugin.json
 ├── README.md
 ├── skill-index.md
 └── skills/
@@ -58,6 +76,19 @@ C:\Users\melve\.codex\skills
 
 ## How to Use
 
+### As a Codex Plugin
+
+Clone or download this repository, then install it through your Codex plugin
+workflow. The plugin manifest is at:
+
+```text
+.codex-plugin/plugin.json
+```
+
+After installation, start a new Codex thread so the plugin skills are loaded.
+
+### As Individual Skills
+
 1. Copy the needed skill folder into a Codex skills directory or another agent
    workspace that supports `SKILL.md`-style instructions.
 2. Ask the agent to use the relevant skill by name, such as
@@ -71,4 +102,3 @@ C:\Users\melve\.codex\skills
 The `course-slide` and `powerpoint-slide-illustration` skills include reference
 files and sample assets used by the skill instructions. Keep those folders
 together when copying the skills elsewhere.
-

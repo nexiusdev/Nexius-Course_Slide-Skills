@@ -1,0 +1,37 @@
+{
+  "name": "nexius-course-slide-skills",
+  "version": "0.1.0",
+  "description": "Reusable Nexius course design, slide planning, visual planning, and PowerPoint illustration skills for Codex.",
+  "author": {
+    "name": "Nexius"
+  },
+  "homepage": "https://github.com/nexiusdev/Nexius-Course_Slide-Skills",
+  "repository": "https://github.com/nexiusdev/Nexius-Course_Slide-Skills",
+  "keywords": [
+    "course-design",
+    "training",
+    "slides",
+    "powerpoint",
+    "codex-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Nexius Course Slide Skills",
+    "shortDescription": "Course design and PowerPoint slide skills for Codex.",
+    "longDescription": "A reusable Codex plugin containing Nexius course design, slide planning, visual planning, artifact planning, and PowerPoint illustration skills.",
+    "developerName": "Nexius",
+    "category": "Productivity",
+    "capabilities": [
+      "Course Design",
+      "Presentation Planning",
+      "Skill Instructions"
+    ],
+    "websiteURL": "https://github.com/nexiusdev/Nexius-Course_Slide-Skills",
+    "defaultPrompt": [
+      "Use $course-slide-planner to plan this course deck.",
+      "Use $course-slide to create a training deck.",
+      "Use $course-slide-visual-planner for slide visuals."
+    ],
+    "brandColor": "#0B2545"
+  }
+}
