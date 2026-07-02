@@ -16,6 +16,12 @@ files, such as Codex, Claude Code, or other agentic workspaces.
 
 | Skill | Purpose |
 |---|---|
+| [`course-program-design`](skills/course-program-design/SKILL.md) | Design a complete course program from business goals, source material, transformation outcomes, activities, and deliverables. |
+| [`course-slide-plan`](skills/course-slide-plan/SKILL.md) | Create build-ready slide-by-slide course deck plans with purpose, visible content, visual treatment, illustration needs, and note direction. |
+| [`course-powerpoint-deck-build`](skills/course-powerpoint-deck-build/SKILL.md) | Build editable PowerPoint training decks from slide plans with projection-safe text, visuals, notes, and QA artifacts. |
+| [`powerpoint-slide-illustration`](skills/powerpoint-slide-illustration/SKILL.md) | Decide when and how to use diagrams, icons, screenshots, graphics, and generated visuals in course slides. |
+| [`course-trainer-notes`](skills/course-trainer-notes/SKILL.md) | Expand slide-note directions into trainer-ready speaker notes with script, examples, questions, activities, timing, and transitions. |
+| [`course-slide-qa-review`](skills/course-slide-qa-review/SKILL.md) | Review course slide plans or decks for trainer enablement, readability, visuals, notes, and approval readiness. |
 | [`course-approval-doc`](skills/course-approval-doc/SKILL.md) | Create management-ready course approval documents, sponsor decision briefs, and training approval papers. |
 
 ## Repository Structure
@@ -25,7 +31,19 @@ files, such as Codex, Claude Code, or other agentic workspaces.
 ├── README.md
 ├── skill-index.md
 └── skills/
-    └── course-approval-doc/
+    ├── course-approval-doc/
+    │   └── SKILL.md
+    ├── course-powerpoint-deck-build/
+    │   └── SKILL.md
+    ├── course-program-design/
+    │   └── SKILL.md
+    ├── course-slide-plan/
+    │   └── SKILL.md
+    ├── course-slide-qa-review/
+    │   └── SKILL.md
+    ├── course-trainer-notes/
+    │   └── SKILL.md
+    └── powerpoint-slide-illustration/
         └── SKILL.md
 ```
 
