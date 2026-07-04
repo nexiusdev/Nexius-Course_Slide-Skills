@@ -13,6 +13,17 @@ concept. Prefer this skill when the user asks for "illustrations" in slides,
 when a deck looks too text/card-heavy, or when a concept needs a visual object
 the trainer can point to.
 
+For Nexius Labs/HARPS course decks, match the Day 2 Company Second Brain
+template: dark navy classroom canvas, teal section language, structured
+card/diagram bodies, bottom message bars, and selective dark technology
+illustrations. The visual must support the trainer's explanation, not replace
+the deck's editable teaching structure.
+
+For those decks, actual illustration assets are required on concept-heavy or
+system-heavy slides. Do not treat text-only cards, plain boxes, or simple lines
+as the full illustration requirement. Use the official logo image from the
+course template; do not recreate the logo as text.
+
 ## Core Rule
 
 An illustration is not a small icon, a letter badge, or a plain schematic.
@@ -34,28 +45,33 @@ keep instructional labels at least 18-24 pt, with 24+ pt preferred.
 ## Required Workflow
 
 1. Review every slide's teaching intent before building visuals.
-2. Determine the active brand profile. Default to `nexius-dark` when no profile
-   is provided. If the user supplies a brand guide, sample deck, palette, logo,
-   or style instruction, infer a temporary profile and apply it consistently.
-3. Create a visual plan with: slide number, concept, trainer explanation job,
+2. Create a visual plan with: slide number, concept, trainer explanation job,
    chosen visual type, icon/illustration need, and speaker-note purpose.
    Include a "no illustration needed" option where the clearest teaching object
    is a quote, discussion prompt, chart, table, canvas, or simple editable
    framework.
-4. Choose the visual strategy:
+3. Choose the visual strategy:
    - **Source** a licensed/free marketplace illustration when it already fits.
    - **Adapt** a raw/reference image by redrawing its structure into the deck
      style.
    - **Generate** a new bitmap illustration when the concept is bespoke.
    - **Draw** an editable PowerPoint diagram only when it can look polished.
+4. For visual-heavy course slides, compare three candidate routes before
+   embedding: generated course-style illustration, editable/native PowerPoint
+   diagram or adapted in-project reference, and licensed third-party/vector
+   marketplace candidate.
 5. Check licensing before downloading or embedding external assets.
-6. Build illustrations large enough to teach from the back of a room, usually
+6. Select based on relevance, explanatory power, visual quality, editability,
+   and license safety. If a sourced asset explains the idea well but licensing
+   is unclear, use it only as reference and redraw or regenerate an original
+   version.
+7. Build illustrations large enough to teach from the back of a room, usually
    55-75% of the slide canvas.
-7. Embed illustrations as PNG for Canva compatibility unless editable vector
+8. Embed illustrations as PNG for Canva compatibility unless editable vector
    fidelity is explicitly more important, but do not flatten slide labels,
    headings, chart labels, or explanation text into the PNG.
-8. Add trainer notes explaining how to teach from the visual.
-9. Render previews and inspect the contact sheet plus key slides full-size.
+9. Add trainer notes explaining how to teach from the visual.
+10. Render previews and inspect the contact sheet plus key slides full-size.
 
 ## Visual Types
 
@@ -95,6 +111,9 @@ Use external marketplaces only when the asset can be legally used.
   asks to use licensed downloads.
 - SlideModel: useful for editable PowerPoint illustration/infographic patterns
   and visual metaphor examples.
+- Vecteezy: useful as a third-party vector candidate source when the user asks
+  to compare marketplace visuals. Treat preview art as reference until license
+  status, attribution requirements, and permitted use are clear.
 
 Do not copy preview images from marketplaces as final assets. If access or
 license is unclear, use the site only as visual reference and generate or draw a
@@ -102,8 +121,7 @@ new original illustration.
 
 ## Generation
 
-Use prompts that match the active brand profile. For the default `nexius-dark`
-technology training profile, target:
+For dark technology training decks, use prompts or scripts that target:
 
 - dark navy gradient background,
 - teal glow lines and nodes,
@@ -113,9 +131,7 @@ technology training profile, target:
 - no logos, no provider names, no tiny text.
 
 Use `scripts/generate_dark_neon_illustrations.py` as a starting point for
-repeatable PNG assets when a bespoke professional diagram is needed. For other
-brand profiles, adapt its palette, background, linework, and accent colors
-before using it.
+repeatable PNG assets when a bespoke professional diagram is needed.
 
 ## PowerPoint Embedding
 
@@ -127,6 +143,9 @@ before using it.
 - Only place text inside the image when it is decorative, not instructional, or
   when the user explicitly requests a flattened visual.
 - Do not let the illustration compete with the title or bottom callout.
+- In the Nexius course template, preserve the slide anatomy around the visual:
+  section tag, large concept title, structured editable labels, bottom message
+  bar, footer, and slide number.
 - Do not use small decorative images merely to satisfy an "image per slide"
   requirement.
 
@@ -135,6 +154,12 @@ before using it.
 Before delivery:
 
 - Each concept slide has a clear visual explanation strategy.
+- Nexius/HARPS course decks use the official Nexius Labs logo image, not a text
+  substitute.
+- Concept-heavy decks include actual raster, sourced, generated, or adapted
+  illustration assets where the template calls for them.
+- Icons appear in card grids, flows, and status concepts where they improve
+  scanning.
 - The visual form changes with the teaching job; the deck is not a sequence of
   near-identical illustration panels.
 - Slides that do not need an illustration are allowed to be clean text, chart,
@@ -150,4 +175,6 @@ Before delivery:
 - The visual style is consistent across slides.
 - External assets have acceptable license status or are replaced with original
   generated/adapted visuals.
+- For slides with three visual candidates, the selected route is documented by
+  teaching relevance and explanatory power, not only by visual polish.
 - The PPTX renders correctly and key slides have been visually inspected.

@@ -2,12 +2,34 @@
 
 Use these patterns as defaults when turning course content into slides.
 
+For Nexius/HARPS decks, prefer the Day 2 Company Second Brain template rhythm:
+section tag, strong concept title, structured teaching body, and bottom
+message/remember/workbook bar. Every visible pattern should have a matching
+speaker-note purpose.
+
 ## Title Slide
 
 - Big left-aligned headline.
 - Short subtitle or audience note.
 - One simple right-side visual/callout using circles, cards, or a bordered box.
 - Footer source/course label.
+- In the Nexius template, add a bottom day-promise bar and 3-4 compact category
+  pills when the slide introduces a course artifact or learning system.
+
+## Output Or Artifact Slide
+
+- Use 4-6 cards to show the exact outputs learners will produce.
+- Each card needs a short title, one concise explanation, and a clear artifact
+  or decision word.
+- Use the bottom bar to promise the practical outcome.
+
+## Activity Or Workbook Slide
+
+- State what learners must complete, decide, or test.
+- Show the workbook fields, canvas sections, or checklist rows as a visual
+  preview instead of burying them in prose.
+- Keep instructions short on-slide and place facilitation detail in notes.
+- Use a bottom `WORKBOOK`, `ACTIVITY`, or `NEXT STEP` bar.
 
 ## Three-Card Explanation
 
@@ -24,6 +46,8 @@ Use these patterns as defaults when turning course content into slides.
 - Each step: number, action verb, short description.
 - Add one bottom callout bar with the instructor takeaway.
 - Use arrows sparingly and keep them simple.
+- For permission, review, or governance flows, use colored end states such as
+  permitted, ask, escalate, refuse, approved, or blocked.
 
 ## Checklist Cards
 
@@ -38,6 +62,8 @@ Use these patterns as defaults when turning course content into slides.
 - Center a large statement inside a thin bordered box.
 - Add a short teal label above or inside the box.
 - Keep supporting text to one line.
+- In the Nexius template, this pattern usually still needs a bottom `REMEMBER`
+  bar that turns the rule into a management action.
 
 ## Image-Led Concept Slide
 
@@ -94,6 +120,19 @@ Use these patterns as defaults when turning course content into slides.
   traceable.
 - Render the slide and check for clipped labels, tiny text, and overlap with
   bottom callout bars before delivery.
+
+## Three-Candidate Visual Selection
+
+- Use when a slide needs an explanatory visual and more than one visual route is
+  plausible.
+- Compare: generated dark-course illustration, editable/native PowerPoint
+  diagram or adapted project reference, and licensed third-party/vector
+  marketplace candidate.
+- Score relevance, explanatory power, visual quality, editability, and license
+  safety.
+- Select the visual that lets the trainer explain the concept fastest. If a
+  third-party visual has good structure but unclear license status, redraw or
+  regenerate an original version in the template style.
 
 ## Illustration Prompt Pattern
 

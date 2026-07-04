@@ -1,7 +1,11 @@
 # Nexius Course Slide Skills
 
 Reusable course-related Codex plugin for course design, slide planning, visual
-planning, artifact planning, and PowerPoint illustration.
+planning, artifact planning, and PowerPoint illustration. The current default
+course deck style follows the Nexius Labs Day 2 Company Second Brain template:
+dark navy canvas, official Nexius Labs logo, teal section language, icons,
+explanatory illustrations, workbook/activity slides, bottom message bars, and
+trainer notes.
 
 These folders mirror the installed personal Codex skills from:
 
@@ -37,34 +41,38 @@ See [INSTALL.md](INSTALL.md) for install notes.
 | [`course-artifact-template-planner`](skills/course-artifact-template-planner/SKILL.md) | Plan handouts, worksheets, templates, rubrics, checklists, canvases, and final course artifacts. |
 | [`powerpoint-slide-illustration`](skills/powerpoint-slide-illustration/SKILL.md) | Plan, source, generate, and QA professional explanatory illustrations for PowerPoint training decks. |
 
-## Brand Profiles
+## Canonical Course Template
 
-The plugin defaults to the `nexius-dark` brand profile, but users can supply or
-create their own brand profile without rewriting the skills.
+The plugin defaults to the Day 2 Company Second Brain course template.
 
-Default profile:
-
-```text
-skills/course-slide/references/brand-profiles/nexius-dark.md
-```
-
-Template for new profiles:
+Canonical template assets:
 
 ```text
-skills/course-slide/references/brand-profiles/custom-brand-template.md
+skills/course-slide/assets/sample-decks/Day_2_Company_Second_Brain_Template.pptx
+skills/course-slide/assets/visual-reference/day2-company-second-brain-contact-sheet.png
+skills/course-slide/references/nexius-course-template.md
 ```
+
+Key acceptance checks:
+
+- Use the official Nexius Labs logo image at top-right on normal content slides.
+- Use icons in cards, flows, matrices, and status concepts where they improve
+  scanning.
+- Use real explanatory illustrations on concept-heavy or system-heavy slides.
+- Add trainer notes to every instructional slide.
+- Render and inspect the contact sheet before delivery.
 
 Example prompt:
 
 ```text
-Use $course-slide with the nexius-dark brand profile.
+Use $course-slide to build this as a Nexius course deck.
 ```
 
 Or:
 
 ```text
-Use $course-slide with this attached client brand guide. Infer a temporary
-brand profile and apply it consistently.
+Use $course-slide with this attached final course template. Follow its logo,
+icons, illustration style, footer, message bars, and trainer-note requirements.
 ```
 
 ## Repository Structure

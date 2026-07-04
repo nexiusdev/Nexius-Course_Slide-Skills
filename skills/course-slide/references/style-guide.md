@@ -1,27 +1,8 @@
 # Course Slide Style Guide
 
-Use this visual system for dark navy instructional training decks.
-
-## Brand Profiles
-
-This skill supports brand profiles. Unless the user supplies another profile,
-use `references/brand-profiles/nexius-dark.md` as the default.
-
-When the user asks for a different brand, client style, color palette, sample
-deck, or visual identity:
-
-1. Read the requested brand profile if it exists under `references/brand-profiles/`.
-2. If no profile exists, infer a temporary profile from the user's brand guide,
-   sample deck, colors, fonts, or attached references.
-3. Apply that profile consistently across palette, typography, layout rhythm,
-   visual style, iconography, and generated-image prompts.
-4. Keep large-room readability rules from this style guide unless the user
-   explicitly changes them.
-5. Do not force `nexius-dark` colors when another brand profile is selected.
-
-To add a reusable brand, copy
-`references/brand-profiles/custom-brand-template.md`, rename it to the new
-profile id, and fill in the sections.
+Use this visual system for dark navy instructional training decks. For
+Nexius/HARPS course decks, treat the Day 2 Company Second Brain deck as the
+canonical template and follow `nexius-course-template.md`.
 
 ## Core Style
 
@@ -37,6 +18,8 @@ profile id, and fill in the sections.
   clean sans-serif similar to Aptos.
 - Mood: serious, modern, instructor-friendly, cybersecurity/workflow governance
   training style.
+- Template feel: a structured classroom operating system, not a marketing deck.
+  Slides should feel teachable, reviewable, and easy for a trainer to point at.
 
 ## Slide Anatomy
 
@@ -52,11 +35,17 @@ profile id, and fill in the sections.
 - Footer: tiny muted course/source label bottom-left.
 - Slide number: bottom-right, two digits.
 - Breathing room: leave generous margins and avoid edge-to-edge text.
+- Nexius template anatomy: top-left section tag, official Nexius Labs logo
+  image at top-right, large concept title, structured central teaching body,
+  bottom labeled takeaway bar, footer, and slide number.
 
 ## Components
 
 - Cards: slightly lighter navy than the background, with thin teal, blue, amber,
   red, green, or purple borders. Use vertical accent bars for status or category.
+- Icons: use small, consistent icon assets inside colored circular or compact
+  containers for card categories, statuses, tools, sources, permissions,
+  review, warnings, and completion. Icons should aid scanning, not decorate.
 - Callout bars: full-width rounded rectangle near the bottom, teal outline, left
   label in uppercase teal, cue text in white.
 - Flow steps: circles or compact cards connected by simple lines/arrows.
@@ -66,6 +55,12 @@ profile id, and fill in the sections.
   notes.
 - Quote/rule slides: centered text inside a bordered box, minimal supporting
   copy.
+- Activity/workbook slides: clear task, output, timebox or instruction cue, and
+  enough visual resemblance to the learner artifact that participants know what
+  they are producing.
+- Governance slides: permission gates, access matrices, escalation paths,
+  citation rules, confidence rules, feedback loops, and audit trails should use
+  the template's blue/green/purple/amber/red status language consistently.
 - Image-led concept slides: large left-aligned headline, one generated or
   sourced explanatory illustration occupying 60-70% of the slide, 2-4 short
   teaching cues, and a bottom callout. Use these for abstract systems,
@@ -98,6 +93,18 @@ The bundled sample decks use:
 - Simple shape visuals: circles, cards, rows, and bordered message bars.
 - Bottom-left course/source footer and bottom-right slide number.
 - Minimal photos; most meaning comes from typography and simple editable shapes.
+
+The Day 2 Company Second Brain template adds:
+
+- Top-right official Nexius Labs logo image placement on most slides. Do not
+  recreate the logo as text.
+- Frequent bottom bars labeled `MESSAGE`, `REMEMBER`, `TAKEAWAY`,
+  `BOTTOM LINE`, `WORKBOOK`, or `NEXT STEP`.
+- Card rows, step tracks, architecture stacks, permission gates, evaluation
+  questions, and activity instructions as recurring teaching patterns.
+- Selective use of large dark technology illustrations where they explain the
+  concept, especially on title/promise and system overview slides.
+- Speaker notes on instructional slides as part of the deck contract.
 
 ## Generated Illustration Style
 

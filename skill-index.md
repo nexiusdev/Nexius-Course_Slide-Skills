@@ -8,13 +8,14 @@ These skills mirror the course-related personal Codex skills installed under
 **Path:** [`skills/course-slide/SKILL.md`](skills/course-slide/SKILL.md)
 
 **Use when:** Creating or revising instructor-friendly PowerPoint course decks
-that should follow the bundled dark navy / teal instructional style.
+that should follow the bundled Nexius dark navy / teal instructional style.
 
-**Brand support:** Defaults to `nexius-dark`, but can use another brand profile
-from `skills/course-slide/references/brand-profiles/` or infer a temporary
-profile from a supplied brand guide, sample deck, palette, or logo.
+**Template default:** Follows the Day 2 Company Second Brain course template by
+default, including official Nexius Labs logo image, icons, explanatory
+illustrations, bottom message bars, and trainer notes.
 
-**Includes:** `agents/`, `references/`, brand profiles, and sample deck assets.
+**Includes:** `agents/`, `references/`, canonical template notes, and sample
+deck assets.
 
 ## course-slide-planner
 
@@ -30,8 +31,8 @@ before building a training deck.
 **Use when:** Planning visual treatment for each slide after slide inventory
 exists and before PowerPoint creation.
 
-**Brand support:** Plans visuals against the active brand profile, defaulting to
-`nexius-dark`.
+**Template support:** Plans visuals against the Nexius course template by
+default.
 
 ## course-slide-visual-candidates
 
@@ -40,8 +41,9 @@ exists and before PowerPoint creation.
 **Use when:** Generating, comparing, scoring, and selecting three visual routes
 for visual-heavy slides.
 
-**Brand support:** Generates and scores candidate visuals against the active
-brand profile.
+**Template support:** Generates and scores candidate visuals against relevance,
+explanatory power, visual quality, editability, license safety, and fit with the
+Nexius course template.
 
 ## course-learning-experience-designer
 
@@ -65,8 +67,9 @@ checklists, canvases, and final course artifacts.
 **Use when:** Planning, sourcing, generating, and QAing professional explanatory
 illustrations for PowerPoint training decks.
 
-**Brand support:** Uses `nexius-dark` by default and adapts prompts/scripts to
-the selected or inferred brand profile.
+**Template support:** Uses the Nexius course template by default and adapts
+prompts/scripts to the required dark navy, icon-rich, illustration-led training
+style.
 
 **Includes:** `agents/`, `references/`, `scripts/`, and an example
 illustration output.
