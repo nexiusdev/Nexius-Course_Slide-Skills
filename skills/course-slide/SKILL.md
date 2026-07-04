@@ -18,7 +18,16 @@ This skill is the main course-slide preparation entry point. For substantial
 course decks, use the preparation pipeline below before building the final
 PowerPoint:
 
-1. Use `course-learning-experience-designer` when the course needs a learner
+0. First gather the training context before planning slides: topic, learning
+   goal, audience, duration, delivery mode, desired outcome, learner baseline,
+   constraints, and important considerations. If references are provided in any
+   format, including documents, URLs, images, videos, spreadsheets, raw notes,
+   or existing decks, study them to understand the full content context before
+   proposing a slide structure.
+1. Analyze the content into a systematic learning plan: key learning points,
+   concepts, prerequisites, misconceptions, examples, intro, main content,
+   hands-on exercises, debriefs, and conclusion. Use
+   `course-learning-experience-designer` when the course needs a learner
    journey, behavior-change outcomes, activity flow, mastery checks,
    facilitation plan, or cognitive-load pass before slides are planned.
 2. Use `course-artifact-template-planner` when the course requires handouts,
@@ -66,10 +75,24 @@ Use these assets when a PowerPoint template or visual reference is useful:
 
 ## Workflow
 
-0. Determine the preparation state:
+0. Establish the training context and content understanding:
+   - Identify the topic, goal, audience, duration, delivery mode, learner
+     baseline, desired business or learning outcome, and important
+     considerations.
+   - If references are provided in any format, study them first. References may
+     include documents, URLs, images, videos, screenshots, spreadsheets, raw
+     notes, existing decks, or source folders.
+   - Analyze the content to extract key learning points, concepts, dependencies,
+     learner misconceptions, examples, risks, and decisions.
+   - Break the material into a systematic learning plan covering the intro,
+     main content sequence, hands-on exercises or activities, debrief points,
+     and conclusion.
+   - If any of the above is missing or unclear and cannot be inferred safely,
+     ask only the necessary clarifying question before planning slides.
+1. Determine the preparation state:
    - If the learner journey, behavior-change outcomes, activities, assessments,
-     facilitation plan, or cognitive-load flow are not settled, run
-     `course-learning-experience-designer`.
+     facilitation plan, cognitive-load flow, or learning arc are not settled,
+     run `course-learning-experience-designer`.
    - If the course requires participant worksheets, templates, rubrics,
      checklists, canvases, or final management artifacts, run
      `course-artifact-template-planner`.
@@ -89,18 +112,19 @@ Use these assets when a PowerPoint template or visual reference is useful:
    - If the learning blueprint, artifact register, slide inventory, visual plan,
      and selected visual assets are ready, proceed with this deck-building
      workflow.
-1. Inspect the user brief and identify audience, duration, learning outcomes,
-   and desired deliverable: outline, slide-by-slide script, or `.pptx`.
-2. Read the required references above.
-3. If creating an actual `.pptx`, inspect the Day 2 Company Second Brain
+2. Inspect the user brief and confirm the desired deliverable: outline,
+   slide-by-slide script, `.pptx`, trainer guide, learner workbook, or a
+   combination.
+3. Read the required references above.
+4. If creating an actual `.pptx`, inspect the Day 2 Company Second Brain
    template first unless the user provides a different final template. Reuse
    its proportions, spacing, dark theme, footer behavior, top-right logo
    placement where present, card/callout language, activity-slide grammar, and
    bottom takeaway bars. Keep slides 16:9 widescreen.
-4. Turn content into a teaching sequence: setup, concept, worked example,
+5. Turn content into a teaching sequence: setup, concept, worked example,
    activity, debrief, and takeaway. Avoid marketing-deck structure unless the
    user explicitly requests it.
-5. Before building the actual deck, create a slide-by-slide visual plan. For
+6. Before building the actual deck, create a slide-by-slide visual plan. For
    each slide, identify the teaching intent, the trainer explanation job, the
    most suitable visual treatment, the icon or illustration needed, and the
    speaker-note purpose. Use this as an acceptance checklist while building:
@@ -109,7 +133,7 @@ Use these assets when a PowerPoint template or visual reference is useful:
    The plan must explicitly say when a slide does **not** need an illustration.
    Do not force an image onto every slide. Use illustration only when it improves
    learner understanding, memory, or explanation speed.
-6. When multiple illustration routes are plausible, compare them before
+7. When multiple illustration routes are plausible, compare them before
    embedding: generated dark-course visuals, editable/native diagrams, and
    third-party vector/marketplace candidates. Select one visual route per slide
    based on teaching value, style fit, editability, and license safety. Do not
@@ -131,14 +155,14 @@ Use these assets when a PowerPoint template or visual reference is useful:
    Choose the candidate that best explains the slide, not merely the prettiest
    one. If a third-party asset has the best structure but unclear license,
    redraw or regenerate an original version inspired by the structure.
-7. Keep every slide concise and projection-safe. Prefer one main idea per slide,
+8. Keep every slide concise and projection-safe. Prefer one main idea per slide,
    a large teaching statement, a structured visual body, and a bottom message
    bar over paragraphs. Dense card grids are acceptable only when they follow
    the template's spacing, short-copy, and projection-readability rules.
-8. Use model-agnostic wording unless the course is explicitly about a named
+9. Use model-agnostic wording unless the course is explicitly about a named
    model or tool. For AI/agentic courses, separate workflow logic, agent design,
    model routing, token optimization, governance, and orchestration.
-9. For concept-heavy slides, create or source a strong explanatory illustration
+10. For concept-heavy slides, create or source a strong explanatory illustration
    when it materially helps the instructor explain the point. In this course,
    "illustration" means a professionally designed explanatory diagram or image:
    polished dark-navy/teal infographic composition, glow/lighting or depth when
@@ -152,11 +176,11 @@ Use these assets when a PowerPoint template or visual reference is useful:
    and explanation text must be editable PowerPoint elements. If a sourced or
    generated illustration contains words, recreate those words as PowerPoint
    text and use a clean/no-text version of the image where possible.
-10. Add trainer notes to the PowerPoint notes section for every instructional
+11. Add trainer notes to the PowerPoint notes section for every instructional
    slide. Notes should explain how to teach from the visual, what question to
    ask, what transition to make, or what activity instruction to give. Do not
    put trainer-only guidance on the visible slide.
-11. If the project includes raw reference images, inspect them for reusable
+12. If the project includes raw reference images, inspect them for reusable
    structures such as loops, maturity ladders, operating-model stacks,
    governance paths, workflow maps, or before/after diagrams. Recreate the
    useful structure in the course style instead of pasting the raw image
@@ -164,7 +188,7 @@ Use these assets when a PowerPoint template or visual reference is useful:
    generated illustration, or editable PowerPoint visual with clear labels. If
    the raw reference contains a useful framework, redraw it as an explanatory
    diagram with short text labels, not just a symbolic illustration.
-12. Verify the result: check slide count, large-room readable font sizes,
+13. Verify the result: check slide count, large-room readable font sizes,
    footer/slide numbers, consistent colors, and no text overflow, overlap, or
    clipping. Render a contact sheet and inspect whether labels sit comfortably
    inside cards, callouts, and compact boxes. If text feels pinched even when no
