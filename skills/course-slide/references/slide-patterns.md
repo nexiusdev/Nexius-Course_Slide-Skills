@@ -121,6 +121,30 @@ speaker-note purpose.
 - Render the slide and check for clipped labels, tiny text, and overlap with
   bottom callout bars before delivery.
 
+## Report-Inspired Infographic Recreation
+
+Use this pattern for PDF reports, research reports, and source decks when a
+valuable figure should inform the slide but direct screenshot extraction looks
+sloppy, cut off, too small, off-brand, or disconnected from the Nexius dark
+template.
+
+- Inspect the source page or figure and isolate the useful teaching content:
+  the chart relationship, framework structure, key numbers, categories, and any
+  short source copy that must remain accurate.
+- Recreate the visual as a clean dark Nexius-style infographic, chart, matrix,
+  maturity ladder, quote panel, or diagram rather than pasting the raw crop.
+- Match the source meaning and essential copy, but restyle the visual with dark
+  navy backgrounds, teal structure, restrained blue/green/purple/amber accents,
+  and large readable labels.
+- Keep the recreated visual self-contained and polished: no accidental page
+  margins, cut-off labels, tiny report footnotes, or mismatched white blocks
+  unless the white area is intentionally redesigned as a readable quote or
+  chart panel.
+- Add provenance in notes or a small source badge, for example `Recreated from
+  WTI 2026 page 8`.
+- Render a contact sheet of recreated visual assets before embedding, then
+  verify the final slide preview at full size.
+
 ## Three-Candidate Visual Selection
 
 - Use when a slide needs an explanatory visual and more than one visual route is

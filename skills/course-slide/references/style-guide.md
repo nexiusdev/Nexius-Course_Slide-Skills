@@ -142,6 +142,16 @@ When the source image contains a useful framework, preserve the explanatory
 structure with large editable labels instead of reducing it to a simple icon or
 metaphor.
 
+For PDF reports, research reports, and source decks, prefer recreated
+report-inspired infographic visuals over direct crops when the original figure
+does not blend cleanly with the Nexius course design. Extract the useful
+illustration structure, chart relationship, key numbers, labels, and short
+source copy, then recreate the visual in dark navy/teal with readable
+classroom-scale typography. Avoid partial page crops, cut-off figures, tiny
+source text, mismatched white-page blocks, and raw screenshots that look pasted
+onto the slide. Preserve provenance with a note or small badge such as
+`Recreated from [report/page/figure]`.
+
 After rendering, inspect the slide image. Check that diagram labels do not clip,
 hide behind the bottom callout, collide with the title block, or become smaller
 than the surrounding support text. Confirm the large-room typography contract is

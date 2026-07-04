@@ -188,6 +188,14 @@ Use these assets when a PowerPoint template or visual reference is useful:
    generated illustration, or editable PowerPoint visual with clear labels. If
    the raw reference contains a useful framework, redraw it as an explanatory
    diagram with short text labels, not just a symbolic illustration.
+   For PDF reports, do not default to screenshot crops of full pages or partial
+   figures. If a report figure is valuable but the crop looks cut off, low
+   resolution, off-brand, or visually disconnected from the deck, extract the
+   useful illustration structure, key numbers, labels, and source copy, then
+   recreate it as a report-inspired infographic visual that matches the dark
+   Nexius slide design and keeps the key source content readable at classroom
+   scale. Preserve source provenance with a short note such as "Recreated from
+   [report/page/figure]" rather than implying it is the original figure.
 13. Verify the result: check slide count, large-room readable font sizes,
    footer/slide numbers, consistent colors, and no text overflow, overlap, or
    clipping. Render a contact sheet and inspect whether labels sit comfortably
@@ -322,6 +330,26 @@ decorations:
 Use raw references especially for agent loops, AI operating-system diagrams,
 model routers, human-in-the-loop governance, context engineering flows, MCP/tool
 integration, workflow canvases, maturity ladders, and orchestration diagrams.
+
+For research reports and PDF source decks, add a report-visual recreation pass
+before final PowerPoint assembly:
+
+1. Render or inspect the source page/figure to identify what is actually worth
+   teaching.
+2. Extract the useful structure, key statistics, category labels, short source
+   phrases, and the intended comparison or framework.
+3. Recreate the visual as a clean dark Nexius-style infographic, chart, matrix,
+   maturity ladder, quote card, or diagram. Match the report's meaning and
+   important copy, but use the course palette, spacing, typography, and
+   large-room readability rules.
+4. Avoid sloppy PDF crops: no partial cut-offs, tiny source text, mismatched
+   white-page boxes, accidental margins, or screenshots that do not blend with
+   the deck.
+5. Keep source provenance visible in notes or a small source badge, using
+   wording such as "Recreated from WTI 2026 page 8" when the image is a
+   redesigned derivative rather than a direct copy.
+6. Render a visual asset contact sheet and inspect the recreated graphics before
+   embedding them into the deck.
 
 When using generated images, save or copy selected assets into the project
 output/assets folder, keep a short source-notes file, and render a contact sheet
