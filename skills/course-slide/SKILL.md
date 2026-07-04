@@ -237,6 +237,9 @@ Use these assets when a PowerPoint template or visual reference is useful:
 - Use icons in cards, flows, matrices, and status labels where they improve
   scanning. A whole deck of text-only cards should be treated as incomplete for
   this template.
+- Use the Lucide SVG icon library for icons by default. Pull or generate Lucide
+  SVG assets and embed them consistently; do not mix random icon packs unless
+  the user explicitly provides an approved alternative.
 - Avoid repeating the same visual type across the deck. A good teaching deck
   should deliberately vary between image-led concept slides, diagram-led slides,
   chart/data slides, comparison slides, canvas/activity slides, quote/rule
@@ -265,8 +268,8 @@ Use these assets when a PowerPoint template or visual reference is useful:
 - Treat the bottom message bar as an instructional device. Its sentence should
   name the main point learners should remember or the action they should take.
 - Before delivery, confirm the official logo image appears on normal content
-  slides, icons are used where the template expects scannable categories, and
-  concept-heavy slides include actual illustrations.
+  slides, Lucide SVG icons are used where the template expects scannable
+  categories, and concept-heavy slides include actual illustrations.
 - Avoid stock photos, gradients, shadows, complex illustrations, decorative
   icons, and glossy corporate styling.
 

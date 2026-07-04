@@ -43,9 +43,10 @@ canonical template and follow `nexius-course-template.md`.
 
 - Cards: slightly lighter navy than the background, with thin teal, blue, amber,
   red, green, or purple borders. Use vertical accent bars for status or category.
-- Icons: use small, consistent icon assets inside colored circular or compact
-  containers for card categories, statuses, tools, sources, permissions,
-  review, warnings, and completion. Icons should aid scanning, not decorate.
+- Icons: use Lucide SVG icons by default, placed inside colored circular or
+  compact containers for card categories, statuses, tools, sources,
+  permissions, review, warnings, and completion. Keep stroke weight and color
+  treatment consistent. Icons should aid scanning, not decorate.
 - Callout bars: full-width rounded rectangle near the bottom, teal outline, left
   label in uppercase teal, cue text in white.
 - Flow steps: circles or compact cards connected by simple lines/arrows.

@@ -53,6 +53,9 @@ acceptance criteria, not optional polish:
 - Use icons in cards, flows, matrices, checks, and governance concepts when
   they help the learner scan categories or status. Avoid text-only card grids
   across a whole deck.
+- Use the Lucide SVG icon library as the default source for all deck icons.
+  Keep stroke weight, color treatment, and container style consistent. Do not
+  mix unrelated icon packs unless the user supplies an approved alternative.
 - Include actual illustrations on concept-heavy or system-heavy slides. A deck
   that only uses boxes, lines, and text has not followed this template.
 - Keep illustration text editable in PowerPoint. The raster image should carry

@@ -56,8 +56,8 @@ skills/course-slide/references/nexius-course-template.md
 Key acceptance checks:
 
 - Use the official Nexius Labs logo image at top-right on normal content slides.
-- Use icons in cards, flows, matrices, and status concepts where they improve
-  scanning.
+- Use Lucide SVG icons in cards, flows, matrices, and status concepts where
+  they improve scanning.
 - Use real explanatory illustrations on concept-heavy or system-heavy slides.
 - Add trainer notes to every instructional slide.
 - Render and inspect the contact sheet before delivery.

@@ -49,7 +49,8 @@ Use the lightest visual that helps the trainer teach the point.
 - Use comparison slides for current vs target state, weak vs strong examples, and risk vs control.
 - Use activity/canvas slides for participant work, templates, artifact-building, and debrief prompts.
 - Use charts only when comparison or evidence is the lesson.
-- Use icons only as category cues, not as the main teaching object.
+- Use Lucide SVG icons by default when icons are needed. Use icons only as
+  category cues, not as the main teaching object.
 - Use generated or sourced illustrations only when they improve learner understanding, memory, or explanation speed.
 
 Prefer diagram-plus-text for concepts with relationships, sequence, or governance logic. The visual should show the structure; 1-3 large text cues should explain why it matters.
